@@ -14,8 +14,8 @@ public class Aluno {
         this.email = email;
     }
 
-    public CPF getCpf() {
-        return cpf;
+    public String getCpf() {
+        return cpf.getCpf();
     }
 
     public void setCpf(CPF cpf) {
@@ -38,8 +38,8 @@ public class Aluno {
         this.telefones = telefones;
     }
 
-    public Email getEmail() {
-        return email;
+    public String getEmail() {
+        return email.getEmail();
     }
 
     public void setEmail(Email email) {
@@ -57,7 +57,7 @@ public class Aluno {
         Email alunoEmail = new Email("lucas@aluno.faculdadeimpacta.com");
         Aluno a = new Aluno(cpfaluno,"Lucas da Silva Santos",alunoEmail);
 
-        System.out.println(a.getEmail().getEmail()+ a.getNome() +a.getCpf().getCpf());
+        System.out.println(a.getEmail()+ a.getNome() +a.getCpf());
     }
 
 }
